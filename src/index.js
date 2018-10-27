@@ -1,13 +1,18 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import React, {useEffect, useState} from 'react';
+import ReactDOM from 'react-dom';
 
 function Counter() {
   const [num, setNum] = useState(0);
+
+  useEffect(() => {
+    document.title = `num:${num}`;
+  });
+
   return (
     <div>
       <button
         onClick={() => {
-          setNum(num + 1);
+    setNum(num + 1);
         }}
       >
         CLICK ME
@@ -17,4 +22,4 @@ function Counter() {
   );
 }
 
-ReactDOM.render(<Counter />, document.querySelector("#app"));
+ReactDOM.render(<Counter />, document.querySelector('#app'));
