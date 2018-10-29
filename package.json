@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./src/**/*.js",
-    "start": "webpack-dev-server --config ./webpack.config.js"
+    "start": "webpack-dev-server --config ./webpack.config.js",
+    "build": "webpack"
   },
   "babel": {
     "presets": [

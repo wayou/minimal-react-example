@@ -10,6 +10,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   rules: {
     'react-hooks/rules-of-hooks': 'error',
+    'max-len': [2, 80, 4, {'ignoreUrls': true}],
     'comma-dangle': 0,
     'react/jsx-uses-vars': 1,
     'react/display-name': 1,
@@ -17,9 +18,7 @@ module.exports = {
     'no-console': 0,
     'no-unexpected-multiline': 'warn',
     'no-case-declarations': 0,
-    'no-undef': 0,
-    // 'react/forbid-prop-types': 0
-    'max-len': [2, 80, 4, {'ignoreUrls': true}]
+    'react/forbid-prop-types': 0
   },
   settings: {react: {pragma: 'React', version: '15.6.1'}}
 };
